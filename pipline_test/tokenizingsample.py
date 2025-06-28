@@ -41,3 +41,6 @@ sequence = "I've been waiting for a HuggingFace course my whole life."
 
 #tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
 #data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+
+def get_sentiment():
+    return 0
