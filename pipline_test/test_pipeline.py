@@ -1,7 +1,7 @@
 from transformers import pipeline
 from fastapi import APIRouter
 from pydantic import BaseModel
-from datasets import load_dataset
+
 
 
 
