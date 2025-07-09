@@ -77,13 +77,12 @@ for item in ds["train"].select(range(100)):
     
     job_skills_list = ast.literal_eval(job_skills)
      
-    #print(matched_skill_names)
-    #print(set(job_skills_list)) 
+    
     common_skills = set(matched_skill_names).intersection(job_skills_list)
     if len(common_skills) >= required_matches:
         job_title = item["job_title_short"]
         matched_jobs.add(job_title)
-        
+
     # if matched_skill_names.issubset(set(job_skills_list)):
     #     job_title = item["job_title_short"]
     #     if job_title not in matched_jobs:
